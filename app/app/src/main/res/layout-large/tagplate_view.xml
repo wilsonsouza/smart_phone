@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="right" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPlate"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:hint="Tag/Placa"
+        android:digits="0123456789QWERTYUIOPASDFGHJKLÇZXCVBNMqwertyuiopasdfghjklçzxcvbnm"
+        android:maxLength="10"
+        android:inputType="textCapCharacters"
+        android:textSize="25px" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

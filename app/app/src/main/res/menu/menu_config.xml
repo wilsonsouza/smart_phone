@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_config_insert"
+        android:title="@string/config_menu_insert"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_config_update"
+          android:title="@string/config_menu_update"
+          app:showAsAction="never"/>
+    <item android:id="@+id/menu_config_delete"
+        android:title="@string/config_menu_delete"
+        app:showAsAction="never"/>
+    <item android:title="@string/config_menu_ip_square"
+          android:id="@+id/menu_config_ip_square"
+        />
+</menu>

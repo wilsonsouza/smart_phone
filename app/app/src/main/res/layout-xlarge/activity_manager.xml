@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.tk.mcs.main.ManagerActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="@drawable/manager"
+    android:gravity="center_horizontal">
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="120px"
+        android:layout_gravity="center_horizontal" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:scrollbars="none"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="99dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:id="@+id/layout0">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton0"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light0"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles0"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic0"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null"/>
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer0"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div0"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout1"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton1"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light1"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles1"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic1"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer1"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout2"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton2"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light2"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles2"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic2"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer2"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div2"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout3"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton3"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light3"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles3"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic3"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer3"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout4"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton4"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light4"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles4"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic4"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer4"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div4"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout5"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton5"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light5"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles5"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic5"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer5"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div5"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout6"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton6"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light6"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles6"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic6"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer6"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div6"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout7"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton7"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light7"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles7"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic7"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer7"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div7"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout8"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton8"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light8"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles8"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic8"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer8"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout9"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioButton9"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:background="@color/lightblue"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="30px"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:background="@null"
+                        android:id="@+id/light9"
+                        android:src="@drawable/light_blank" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/vehicles9"
+                        android:background="@null"
+                        android:src="@drawable/area_blank" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:layout_height="match_parent" >
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/traffic9"
+                        android:src="@drawable/traffic_blank"
+                        android:background="@null" />
+
+                    <ImageButton
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:id="@+id/barrer9"
+                        android:src="@drawable/barrer_blank"
+                        android:background="@null" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/div9"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="130px"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="120px"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1" >
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:id="@+id/btTag"
+            android:layout_column="0"
+            android:drawableTop="@drawable/consultar"
+            android:enabled="false"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:id="@+id/btOpen"
+            android:layout_column="0"
+            android:enabled="false"
+            android:drawableTop="@drawable/abrir"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:id="@+id/btClose"
+            android:layout_column="2"
+            android:enabled="false"
+            android:drawableTop="@drawable/fechar"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:id="@+id/btResponsable"
+            android:layout_column="2"
+            android:enabled="false"
+            android:drawableTop="@drawable/responsavel"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:drawableTop="@drawable/dinheiro"
+            android:id="@+id/btPayMoney"
+            android:layout_column="0"
+            android:enabled="false"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:background="@drawable/button_selector"
+            android:layout_width="160px"
+            android:layout_height="fill_parent"
+            android:id="@+id/btPayTag"
+            android:layout_column="2"
+            android:enabled="false"
+            android:drawableTop="@drawable/tag"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:id="@+id/id_linear">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtRecipt"
+        android:hint="@string/ids_do_recibo"
+        android:textSize="25px"
+        android:digits="0123456789QWERTYUIOPASDFGHJKLÇZXCVBNMqwertyuiopasdfghjklçzxcvbnm"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:maxLength="12"
+        tools:ignore="PxUsage"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTagPlate"
+        android:hint="@string/ids_tag_placa"
+        android:textSize="25px"
+        android:digits="0123456789QWERTYUIOPASDFGHJKLÇZXCVBNMqwertyuiopasdfghjklçzxcvbnm"
+        android:maxLength="10"
+        tools:ignore="PxUsage"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
