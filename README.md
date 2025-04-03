@@ -1,3 +1,1 @@
-The application Track SmartPhone (ViaApp) and an application developed for Android operating system whose function is the emergency control of the unassisted lanes in the toll collection place of the concessionaire.
-Disassembled lanes are understood to mean all those that do not have a cabin with a responsible operator within them (Automatic mode lanes and free lanes / auxiliary lanes)
-The functionality is focused on solving transient anomalies in automatic tracks (AVI).
+The Track Smartphone App (ViaApp) is an Android application designed for emergency management of unattended toll lanes. These lanes, which include automatic (AVI) and auxiliary/free lanes, lack staffed operators. The application's primary function is to address temporary malfunctions within automatic toll collection systems.
